@@ -12,12 +12,16 @@ function oddReverse(arr) {
   // Return an array containing all the odd indices starting from the end
   // Your code here
   let newArr = [];
-  if(arr.length - 1 === )
-  for (var i = arr.length - 1; i > 0; i -= 2) {
-    newArr.push(arr[i]);
+
+  for (let i = arr.length - 1; i >= 0; i--) {
+    if (i % 2 !== 0) {
+      newArr.push(arr[i]);
+    }
   }
   return newArr;
 }
+
+oddReverse([1, 2, 3]);
 
 function secondPower(arr) {
   // Return an array containing all indices that are powers of 2
@@ -44,7 +48,7 @@ function firstHalf(arr) {
   // Include middle index on odd length arr
   // Your code here
   let newArr = [];
-  for (var i = 0; i <= arr.length / 2; i++) {
+  for (var i = 0; i < arr.length / 2; i++) {
     newArr.push(arr[i]);
   }
   return newArr;
